@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>AR Model</title>
+    <style>
+      body {
+        overflow: hidden; /* Prevent browser default scrollbar */
+        margin: 0; /* Remove default margin */
+        padding: 0; /* Remove default padding */
+      }
+      #container {
+        position: relative;
+      }
+      .info-container {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-color: rgba(0, 0, 255, 0); /* Adjust the opacity and color */
+        border: 2px solid rgba(0, 0, 255, 0.5); /* Adjust the border color and opacity */
+        border-radius: 10px;
+        padding: 10px;
+      }
+      .info-container h2 {
+        margin-top: 0;
+      }
+      .info-container p {
+        margin-bottom: 5px;
+      }
+    </style>
+		<link rel="stylesheet" href="index.css">
+
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@v0.153.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@v0.153.0/examples/jsm/"
+        }
+      }
+    </script>
+	</head>
+	<body>
+    <div id="container">
+      <canvas id="canvas"></canvas>
+      <div class="info-container">
+        <h2>Tomato Plant Information</h2>
+        <p>Species: Cherry Tomato</p>
+        <p>Height: 30cm</p>
+        <p>Watering Frequency: Every 2 days</p>
+      </div>
+    </div>
+    </div>
+  
+    </div>
+		<script type="module" src="./script.js"></script>
+	</body>
+</html>
